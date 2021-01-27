@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>글자 크기 설정</title>
+<style>
+	*{
+		padding:0;
+		margin:0;
+		text-align: center;
+	}
+	body{
+		font-size:1.5rem;	/*15rem = 24px / 15em = 24px (16px*1.5) */
+		color:green;
+	}
+	div{
+		color:red;
+	}
+	p{
+		color:black;
+	}
+	.body-p1{
+		color:inherit;
+		sont-size:1.5em;/*부모사이즈*1.5배 = 24*1.5 = 36px  */
+	}
+	.body-p2{
+		sont-size:1.5rem;/*기본사이즈*1.5배 = 16*1.5 = 24px  */
+	}
+	.div1{
+		font-size:1.5rem; /* 36px */
+	}
+	.div1-p1{
+		color:inherit;
+		sont-size:1.5em;/*54px  */
+	}
+	.div1-p2{
+		color:inherit;
+		sont-size:1.5rem;/*54px  */
+	}
+	.div2{
+		font-size:1.5em/* 54 px */
+	}
+	.div2-p1{
+		color:inherit;
+		sont-size:1.5em;/* 81  */
+	}
+	.div2-p2{
+		color:inherit;
+		sont-size:1.5rem;/* 54  */
+	}
+</style>
+</head>
+<body>
+	Hi, CSS!
+	<p class="body-p1">Hi, CSS!</p>
+	<p class="body-p2">Hi, CSS!</p>
+
+	<div class="div1">
+		<p class="div1-p1">Hi, CSS!</p>
+		<p class="div1-p2">Hi, CSS!</p>
+
+		<div class="div2">
+			<p class="div2-p1">Hi, CSS!</p>
+			<p class="div2-p2">Hi, CSS!</p>
+			<div class="div3">
+				<p class="div3-p1">Hi, CSS!</p>
+				<p class="div3-p2">Hi, CSS!</p>
+				<div class="div4">
+					<p class="div4-p1">Hi, CSS!</p>
+					<p class="div4-p2">Hi, CSS!</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

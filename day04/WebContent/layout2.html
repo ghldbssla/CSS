@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+<title>Insert title here</title>
+<style>
+	body{
+		background:#e3f2fd;
+	}
+	#wrap{
+		width:1200px;
+		margin:0 auto;
+	}
+	header{
+		/* 페이지 너비가 줄어들기 때문에 %로 속성값을 줘야 함 */
+		width:100%;
+		height:150px;
+		background:#f8bbd0;
+	}
+	aside{
+		width:25%;
+		height:700px;
+		background:#ffffff;
+		float:left;
+	}
+	section{
+		width:75%;
+		height:700px;
+		background:#e1bee7;
+		float:left;
+	}
+	footer{
+		width:100%;
+		height:150px;
+		background:#1de9b6;
+		/* clear는 float 속성에서 발생할 수 있는 문제를 해결할 수 있도록 도와준다 */
+		clear:both;
+	}
+
+	@media(max-width:1220px){
+		#wrap{
+			width:95%;
+		}
+	}
+	@media(max-width:768px){
+		#wrap{
+			width:100%;
+		}	
+	}
+	@media(max-width:480px){
+		#wrap{width:100%;}
+		header{height:300px;}
+		aside{float:none;width:100%;height:200px;}
+		section{float:none;width:100%;height:500px;}
+		footer{width:100%;height:300px;}		
+	}
+	
+
+
+</style>
+</head>
+<body>
+	<div id="wrap">
+		<header></header>
+		<aside></aside>
+		<section></section>
+		<footer></footer>
+	</div>
+</body>
+</html>

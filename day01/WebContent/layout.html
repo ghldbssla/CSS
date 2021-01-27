@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>시멘틱 태그(layout)</title>
+<style>
+	body{
+		width:440px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	header, nav, section, article, aside, footer{
+		display:block;
+		width:400px;
+		margin:4px;
+		padding:4px;
+		background-color:yellow;
+		text-align:center;
+	}
+	section{
+		float:left;
+		width:280px;
+		height:60px;
+	}
+	article{
+		width:264px;
+		background-color: lime;
+	}
+	aside{
+		float:left;
+		width:104px;
+		height:90px;
+	}
+	footer{
+		overflow:hidden;
+		
+	}
+	
+</style>
+</head>
+<body>
+	<header>헤더 부분</header>
+	<nav>네비게이션 부분</nav>
+	<section>
+		<h4>섹션 부분</h4>
+		<article>아티클 부분</article>
+	</section>
+	<aside>어사이드 부분</aside>
+	<footer>푸터 부분</footer>
+</body>
+</html>

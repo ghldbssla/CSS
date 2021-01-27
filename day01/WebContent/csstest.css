@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+p {
+	font-size: 12px;
+	margin-left: 20px;
+}
+
+.redtext {
+	color: red;
+}
+
+/*HTML 요소의 클래스 명을 선택자로 사용할 때는 반드시 붙여서 작성한다.*/
+h2.bluetext {
+	color: blue;
+}
+
+strong.greentext {
+	color: green;
+}
